@@ -6,6 +6,7 @@ class GenerateRandomUserPasswordTask
 {
     public function run()
     {
-        return strtoupper(str_shuffle(bin2hex(openssl_random_pseudo_bytes(4))));
+        //return strtoupper(str_shuffle(bin2hex(openssl_random_pseudo_bytes(4))));
+        return bcrypt(12345678);
     }
 }

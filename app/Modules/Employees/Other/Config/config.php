@@ -8,7 +8,7 @@ return [
             'number' => 'required|string|max:20|unique:employees',
             'first_name' => 'required|string|max:20',
             'last_name' => 'required|string|max:20',
-            'email' => 'required|string|max:20|unique:employees',
+            'email' => 'required|string|max:50|unique:employees',
             'avatar' => 'sometimes|image|mimes:jpg,png',
             'department' => 'required|numeric|exists:departments,id'
         ],

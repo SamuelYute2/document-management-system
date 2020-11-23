@@ -18,7 +18,7 @@ class APIv1Router
         $this->router->group([
             'prefix' => 'employees',
             'as' => 'employees.',
-            'middleware' => 'auth:api'
+            //'middleware' => 'auth:api'
             ],
             function($router)
             {

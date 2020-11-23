@@ -3,21 +3,28 @@
 namespace App\Modules\Roles\Clients\API\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Modules\Roles\Clients\API\Requests\ChangeRolePasswordRequest;
-use App\Modules\Roles\Clients\API\Requests\ResetRolePasswordRequest;
+use App\Modules\Documents\Documents;
+use App\Modules\Employees\Employees;
+use App\Modules\Roles\Clients\API\Requests\AttachRoleDocumentsRequest;
+use App\Modules\Roles\Clients\API\Requests\AttachRoleEmployeesRequest;
+use App\Modules\Roles\Clients\API\Requests\ChangeRoleDocumentPermissionRequest;
+use App\Modules\Roles\Clients\API\Requests\DetachRoleDocumentsRequest;
+use App\Modules\Roles\Clients\API\Requests\DetachRoleEmployeesRequest;
 use App\Modules\Roles\Clients\API\Requests\StoreRoleRequest;
 use App\Modules\Roles\Clients\API\Requests\UpdateRoleRequest;
 use App\Modules\Roles\Clients\API\Resources\RoleResource;
-use App\Modules\Roles\Processing\Actions\ResetRolePasswordAction;
+use App\Modules\Roles\Processing\Actions\AttachRoleDocumentsAction;
+use App\Modules\Roles\Processing\Actions\AttachRoleEmployeesAction;
+use App\Modules\Roles\Processing\Actions\ChangeRoleDocumentPermissionAction;
+use App\Modules\Roles\Processing\Actions\DetachRoleDocumentsAction;
+use App\Modules\Roles\Processing\Actions\DetachRoleEmployeesAction;
 use Illuminate\Support\Facades\App;
 
 use App\Modules\Roles\Data\Models\Role;
 
-use App\Modules\Roles\Processing\Actions\ChangeRolePasswordAction;
 use App\Modules\Roles\Processing\Actions\CreateRoleAction;
 use App\Modules\Roles\Processing\Actions\DeleteRoleAction;
 use App\Modules\Roles\Processing\Actions\GetAllRolesAction;
-use App\Modules\Roles\Processing\Actions\ToggleRoleAction;
 use App\Modules\Roles\Processing\Actions\UpdateRoleAction;
 
 
@@ -50,25 +57,49 @@ class RoleAPIController extends  Controller
         return response('Success',204);
     }
 
-    public function toggle(Role $role)
+    public function getEmployees(Role $role)
     {
-        App::make(ToggleRoleAction::class)->run($role);
-
-        return response('Success',204);
+        return Employees::resourceCollection($role->employees);
     }
 
-    public function changePassword(ChangeRolePasswordRequest $request, Role $role)
+    public function attachEmployees(AttachRoleEmployeesRequest $request, Role $role)
     {
-        App::make(ChangeRolePasswordAction::class)->run($role, $request->all());
+        App::make(AttachRoleEmployeesAction::class)->run($request->all(), $role);
 
-        return response('Success',204);
+        return response('Success',200);
     }
 
-    public function resetPassword(ResetRolePasswordRequest $request, Role $role)
+    public function detachEmployees(DetachRoleEmployeesRequest $request, Role $role)
     {
-        App::make(ResetRolePasswordAction::class)->run($role);
+        App::make(DetachRoleEmployeesAction::class)->run($request->all(), $role);
 
-        return response('Success',204);
+        return response('Success',200);
+    }
+
+    public function getDocuments(Role $role)
+    {
+        return Documents::resourceCollection($role->documents);
+    }
+
+    public function attachDocuments(AttachRoleDocumentsRequest $request, Role $role)
+    {
+        App::make(AttachRoleDocumentsAction::class)->run($request->all(), $role);
+
+        return response('Success',200);
+    }
+
+    public function detachDocuments(DetachRoleDocumentsRequest $request, Role $role)
+    {
+        App::make(DetachRoleDocumentsAction::class)->run($request->all(), $role);
+
+        return response('Success',200);
+    }
+
+    public function changeDocumentPermission(ChangeRoleDocumentPermissionRequest $request, Role $role)
+    {
+        App::make(ChangeRoleDocumentPermissionAction::class)->run($request->all(), $role);
+
+        return response('Success',200);
     }
 
 }

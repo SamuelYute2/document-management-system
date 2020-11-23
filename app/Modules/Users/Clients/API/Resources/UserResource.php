@@ -19,7 +19,7 @@ class UserResource extends JsonResource
             'id' => (int)$this->id,
             'username' => $this->username,
             'status' => (int)$this->status,
-            'old_password' => $this->old_password,
+            'administrator' => (int)$this->administrator,
             'last_login' => (string)$this->last_login,
             'created_at' => (string)$this->created_at,
             'updated_at' => (string)$this->updated_at,

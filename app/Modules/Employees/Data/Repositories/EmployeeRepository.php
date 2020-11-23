@@ -2,6 +2,7 @@
 
 namespace App\Modules\Employees\Data\Repositories;
 
+use App\Modules\Departments\Data\Models\Department;
 use App\Modules\Employees\Data\Models\Employee;
 
 class EmployeeRepository {

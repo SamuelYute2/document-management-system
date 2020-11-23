@@ -2,13 +2,37 @@
 
 namespace App\Modules\Users\Data\Models;
 
-use App\Modules\Core\AccessControl\Roles\Other\Traits\HasRoles;
+use App\Modules\Employees\Data\Models\Employee;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable
+class User extends Authenticatable implements JWTSubject
 {
-    use Notifiable, HasRoles;
+    use Notifiable;
+
+    // Rest omitted for brevity
+
+    /**
+     * Get the identifier that will be stored in the subject claim of the JWT.
+     *
+     * @return mixed
+     */
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    /**
+     * Return a key value array, containing any custom claims to be added to the JWT.
+     *
+     * @return array
+     */
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
+
 
     /**
      * The attributes that are mass assignable.
@@ -16,7 +40,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username','status'
+        'username', 'status'
     ];
 
     /**
@@ -28,13 +52,8 @@ class User extends Authenticatable
          'password', 'remember_token',
     ];
 
-    public function getRouteKeyName()
-    {
-        return 'username';
-    }
-
     public function employee()
     {
-        return $this->belongsTo();
+        return $this->belongsTo(Employee::class);
     }
 }

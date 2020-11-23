@@ -25,7 +25,7 @@ class UpdateEmployeeRequest extends FormRequest
     {
         return array_merge(config('employees.validation_rules.update', [
             'number' => 'sometimes|string|max:20|unique:employees,number,'.$this->route('employee')->id,
-            'email' => 'sometimes|string|max:20|unique:employees,email,'.$this->route('employee')->id,
+            'email' => 'sometimes|string|max:50|unique:employees,email,'.$this->route('employee')->id,
         ]));
     }
 }

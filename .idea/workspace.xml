@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9080d415-244a-43ec-93cf-585a60c96748" name="Default Changelist" comment="" />
+    <list default="true" id="9080d415-244a-43ec-93cf-585a60c96748" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Requests/DetachDocumentDepartmentsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Documents/Processing/Actions/AttachDocumentDepartmentsAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Documents/Processing/Actions/DetachDocumentDepartmentsAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/AttachRoleDocumentsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/AttachRoleEmployeesRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/ChangeRoleDocumentPermissionRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/DetachRoleDocumentsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/DetachRoleEmployeesRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Data/Models/RoleDocument.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/AttachRoleDocumentsAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/AttachRoleEmployeesAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/DetachRoleDocumentsAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/DetachRoleEmployeesAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Livewire.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Livewire.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Departments/Clients/API/Controllers/DepartmentAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Departments/Clients/API/Controllers/DepartmentAPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Departments/Clients/API/Routes/APIv1Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Departments/Clients/API/Routes/APIv1Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Departments/Data/Models/Department.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Departments/Data/Models/Department.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Departments/Other/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Departments/Other/Config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Controllers/DocumentAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Controllers/DocumentAPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Routes/APIv1Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Routes/APIv1Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Data/Migrations/2020_01_03_100000_create_documents_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Data/Migrations/2020_01_03_100000_create_documents_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Data/Repositories/DocumentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Data/Repositories/DocumentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Other/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Other/Config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Processing/Actions/CreateDocumentAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Processing/Actions/CreateDocumentAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Controllers/EmployeeAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Controllers/EmployeeAPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Requests/UpdateEmployeeRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Requests/UpdateEmployeeRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Resources/EmployeeResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Resources/EmployeeResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Routes/APIv1Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Routes/APIv1Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Data/Models/Employee.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Data/Models/Employee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Data/Repositories/EmployeeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Data/Repositories/EmployeeRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Other/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Other/Config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Processing/Actions/CreateEmployeeAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Processing/Actions/CreateEmployeeAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Controllers/RoleAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Controllers/RoleAPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/ChangeRoleRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Requests/AttachDocumentDepartmentsRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Routes/APIv1Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Routes/APIv1Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Data/Migrations/2020_01_03_100000_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Data/Migrations/2020_01_03_100000_create_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Data/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Data/Models/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Data/Repositories/RoleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Data/Repositories/RoleRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Other/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Other/Config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/ChangeRoleAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/ChangeRoleDocumentPermissionAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/CreateRoleAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/CreateRoleAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Controllers/UserAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Controllers/UserAPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Resources/UserResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Resources/UserResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Routes/APIv1Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Routes/APIv1Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Data/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Data/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Data/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Data/Repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Other/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Other/Config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Other/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Other/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Processing/Actions/CreateUserAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Processing/Actions/CreateUserAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Processing/Tasks/GenerateRandomUserPasswordTask.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Processing/Tasks/GenerateRandomUserPasswordTask.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/departments.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/departments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/documents.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/documents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/employees.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/employees.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/roles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +96,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -123,17 +205,23 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ggIylGSc6uvvnLWU3FqvZE4dK0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Documents/Processing/Actions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -149,11 +237,11 @@
       <recent name="$PROJECT_DIR$/app/Modules/Roles/Data/Migrations" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Modules" />
-      <recent name="$PROJECT_DIR$/app/Modules/Documents/Data/Migrations" />
-      <recent name="$PROJECT_DIR$/app/Modules/Departments/Data/Migrations" />
-      <recent name="$PROJECT_DIR$/app/Modules/Employees/Data/Migrations" />
-      <recent name="$PROJECT_DIR$/app/Modules/Users/Data/Migrations" />
+      <recent name="$PROJECT_DIR$/app/Modules/Documents/Processing/Actions" />
+      <recent name="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Requests" />
+      <recent name="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests" />
+      <recent name="$PROJECT_DIR$/app/Modules/Roles/Data/Models" />
+      <recent name="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions" />
     </key>
   </component>
   <component name="RunManager">
@@ -178,14 +266,36 @@
       <workItem from="1605192132672" duration="9000" />
       <workItem from="1605441833628" duration="596000" />
       <workItem from="1605682141249" duration="10503000" />
-      <workItem from="1605692798437" duration="19000" />
+      <workItem from="1605692798437" duration="2784000" />
+      <workItem from="1605768298730" duration="15577000" />
+      <workItem from="1606143403108" duration="22520000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="754" y="281" width="391" height="512" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606168913381">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state x="754" y="281" width="391" height="512" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1007@0.27.1920.1007" timestamp="1606168913381" />
+    <state x="693" y="288" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606169424977">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state x="693" y="288" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1007@0.27.1920.1007" timestamp="1606169424977" />
     <state x="743" y="288" width="424" height="491" key="FileChooserDialogImpl" timestamp="1605441881517">
       <screen x="0" y="27" width="1920" height="1007" />
     </state>
@@ -198,5 +308,13 @@
       <screen x="0" y="27" width="1920" height="1007" />
     </state>
     <state x="1132" y="224" width="618" height="612" key="find.popup/0.27.1920.1007@0.27.1920.1007" timestamp="1605691501935" />
+    <state x="624" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1605771549951">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state x="624" y="173" width="672" height="676" key="search.everywhere.popup/0.27.1920.1007@0.27.1920.1007" timestamp="1605771549951" />
+    <state x="685" y="437" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1606155250693">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state x="685" y="437" width="540" height="193" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1920.1007@0.27.1920.1007" timestamp="1606155250693" />
   </component>
 </project>

@@ -16,7 +16,7 @@ class CreateDocumentsTable extends Migration
         Schema::create('documents', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->json('index')->nullable();
+            $table->longText('index');
             $table->string('url')->nullable();
             $table->string('path')->nullable();
             $table->enum('type', [1,2,3,4,5,6]);

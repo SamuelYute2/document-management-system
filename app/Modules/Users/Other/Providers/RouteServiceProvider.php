@@ -2,6 +2,7 @@
 
 namespace App\Modules\Users\Other\Providers;
 
+use App\Http\Controllers\AuthController;
 use App\Modules\Users\Users;
 use App\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
@@ -65,6 +66,8 @@ class RouteServiceProvider extends ServiceProvider
    */
   protected function mapApiRoutes()
   {
+
+
       Route::group([
           'prefix' => 'api',
           'as' => 'api.',
@@ -75,6 +78,15 @@ class RouteServiceProvider extends ServiceProvider
               'prefix' => 'v1',
               'as' => 'v1.'
           ],function($router){
+              Route::group([
+                  'prefix' => 'auth',
+              ], function ($router) {
+                  $router->post('login', [AuthController::class, 'login']);
+                  $router->post('logout', [AuthController::class, 'logout']);
+                  $router->post('refresh', [AuthController::class, 'refresh']);
+                  $router->get('me', [AuthController::class, 'me']);
+              });
+
               App::makeWith(APIv1Router::class,['router' => $router])->run();
           });
       });

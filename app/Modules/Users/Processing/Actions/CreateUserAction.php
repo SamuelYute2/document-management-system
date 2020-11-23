@@ -2,8 +2,10 @@
 
 namespace App\Modules\Users\Processing\Actions;
 
+use App\Modules\Employees\Employees;
 use App\Modules\Users\Data\Repositories\UserRepository;
 use App\Modules\Users\Processing\Tasks\GenerateRandomUserPasswordTask;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 
 /**
@@ -18,10 +20,11 @@ use Illuminate\Support\Facades\App;
 
 class CreateUserAction
 {
-    public function run($data, $userable)
+    public function run($data)
     {
-        $data = array_add($data,'password',App::make(GenerateRandomUserPasswordTask::class)->run());
+        $employee = Employees::repository()->get($data['employee']);
+        $data = Arr::add($data,'password',App::make(GenerateRandomUserPasswordTask::class)->run());
 
-        return App::make(UserRepository::class)->create($data, $userable);
+        return App::make(UserRepository::class)->create($data, $employee);
     }
 }

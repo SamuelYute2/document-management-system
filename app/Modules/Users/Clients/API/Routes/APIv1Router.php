@@ -18,7 +18,7 @@ class APIv1Router
         $this->router->group([
             'prefix' => 'users',
             'as' => 'users.',
-            'middleware' => 'auth:api'
+            //'middleware' => 'auth:api'
             ],
             function($router)
             {
@@ -46,6 +46,11 @@ class APIv1Router
             $router->delete('/{user}', [
                 'as' => 'delete',
                 'uses' => 'UserAPIController@delete',
+            ]);
+
+            $router->get('/{user}/employee', [
+                'as' => 'employee',
+                'uses' => 'UserAPIController@getEmployee',
             ]);
 
             $router->patch('/{user}/toggle', [

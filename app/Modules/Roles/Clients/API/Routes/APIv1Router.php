@@ -18,7 +18,7 @@ class APIv1Router
         $this->router->group([
             'prefix' => 'roles',
             'as' => 'roles.',
-            'middleware' => 'auth:api'
+            //'middleware' => 'auth:api'
             ],
             function($router)
             {
@@ -49,13 +49,38 @@ class APIv1Router
             ]);
 
             $router->get('/{role}/employees', [
-                'as' => 'employees',
+                'as' => 'employees.get.all',
                 'uses' => 'RoleAPIController@getEmployees',
             ]);
 
+            $router->post('/{role}/employees', [
+                'as' => 'employees.attach',
+                'uses' => 'RoleAPIController@attachEmployees',
+            ]);
+
+            $router->delete('/{role}/employees', [
+                'as' => 'employees.detach',
+                'uses' => 'RoleAPIController@detachEmployees',
+            ]);
+
             $router->get('/{role}/documents', [
-                'as' => 'documents',
+                'as' => 'documents.get.all',
                 'uses' => 'RoleAPIController@getDocuments',
+            ]);
+
+            $router->post('/{role}/documents', [
+                'as' => 'documents.attach',
+                'uses' => 'RoleAPIController@attachDocuments',
+            ]);
+
+            $router->put('/{role}/documents', [
+                'as' => 'documents.permission.change',
+                'uses' => 'RoleAPIController@changeDocumentPermission',
+            ]);
+
+            $router->delete('/{role}/documents', [
+                'as' => 'documents.detach',
+                'uses' => 'RoleAPIController@detachDocuments',
             ]);
         });
     }

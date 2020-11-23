@@ -3,6 +3,7 @@
 namespace App\Modules\Users\Clients\API\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Modules\Employees\Employees;
 use App\Modules\Users\Clients\API\Requests\ChangeUserPasswordRequest;
 use App\Modules\Users\Clients\API\Requests\ResetUserPasswordRequest;
 use App\Modules\Users\Clients\API\Requests\StoreUserRequest;
@@ -48,6 +49,11 @@ class UserAPIController extends  Controller
         App::make(DeleteUserAction::class)->run($user);
 
         return response('Success',204);
+    }
+
+    public function getEmployee(User $user)
+    {
+        return Employees::resource($user->employee);
     }
 
     public function toggle(User $user)

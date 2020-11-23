@@ -2,8 +2,10 @@
 
 namespace App\Modules\Employees\Processing\Actions;
 
+use App\Modules\Departments\Departments;
 use App\Modules\Employees\Data\Repositories\EmployeeRepository;
 use App\Modules\Employees\Processing\Tasks\GenerateRandomEmployeePasswordTask;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 
 /**
@@ -18,10 +20,10 @@ use Illuminate\Support\Facades\App;
 
 class CreateEmployeeAction
 {
-    public function run($data, $employeeable)
+    public function run($data)
     {
-        $data = array_add($data,'password',App::make(GenerateRandomEmployeePasswordTask::class)->run());
+        $department = Departments::repository()->get($data['department']);
 
-        return App::make(EmployeeRepository::class)->create($data, $employeeable);
+        return App::make(EmployeeRepository::class)->create($data, $department);
     }
 }

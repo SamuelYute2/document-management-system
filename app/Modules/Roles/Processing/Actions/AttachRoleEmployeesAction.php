@@ -2,8 +2,8 @@
 
 namespace App\Modules\Roles\Processing\Actions;
 
+use App\Modules\Roles\Data\Models\Role;
 use App\Modules\Roles\Data\Repositories\RoleRepository;
-use App\Modules\Roles\Processing\Tasks\GenerateRandomRolePasswordTask;
 use Illuminate\Support\Facades\App;
 
 /**
@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\App;
  * @package App\Modules\Roles\Processing\Actions
  */
 
-class CreateRoleAction
+class AttachRoleEmployeesAction
 {
-    public function run($data)
+    public function run($data, Role $role)
     {
-        return App::make(RoleRepository::class)->create($data);
+        return App::make(RoleRepository::class)->attachEmployees($data, $role);
     }
 }

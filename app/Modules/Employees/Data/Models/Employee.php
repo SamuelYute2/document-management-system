@@ -2,13 +2,13 @@
 
 namespace App\Modules\Employees\Data\Models;
 
+use App\Modules\Departments\Data\Models\Department;
 use App\Modules\Users\Data\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 
 class Employee extends Model
 {
-    use Notifiable, HasRoles;
 
     /**
      * The attributes that are mass assignable.

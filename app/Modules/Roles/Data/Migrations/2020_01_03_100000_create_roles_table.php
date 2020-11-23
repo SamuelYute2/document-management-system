@@ -32,6 +32,7 @@ class CreateRolesTable extends Migration
         Schema::create('document_role', function (Blueprint $table) {
             $table->unsignedBigInteger('document_id');
             $table->unsignedBigInteger('role_id');
+            $table->enum('permission', [2,1]);
             $table->timestamps();
 
             $table->foreign('document_id')->references('id')->on('documents')->onDelete('cascade');

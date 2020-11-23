@@ -18,7 +18,7 @@ class APIv1Router
         $this->router->group([
             'prefix' => 'documents',
             'as' => 'documents.',
-            'middleware' => 'auth:api'
+            //'middleware' => 'auth:api'
             ],
             function($router)
             {
@@ -54,12 +54,22 @@ class APIv1Router
             ]);
 
             $router->get('/{document}/departments', [
-                'as' => 'documents',
+                'as' => 'departments.get.all',
                 'uses' => 'DocumentAPIController@getDepartments',
             ]);
 
+            $router->post('/{document}/departments', [
+                'as' => 'departments.attach',
+                'uses' => 'DocumentAPIController@attachDepartments',
+            ]);
+
+            $router->delete('/{document}/departments', [
+                'as' => 'departments.detach',
+                'uses' => 'DocumentAPIController@detachDepartments',
+            ]);
+
             $router->get('/{document}/versions', [
-                'as' => 'documents',
+                'as' => 'versions',
                 'uses' => 'DocumentAPIController@getVersions',
             ]);
         });

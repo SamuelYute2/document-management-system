@@ -17,12 +17,12 @@ class EmployeeResource extends JsonResource
         return [
             'object' => 'Employee',
             'id' => (int)$this->id,
+            'number' => $this->number,
             'first_name' => $this->first_name,
             'last_name' => $this->last_name,
             'email' => $this->email,
             'created_at' => (string)$this->created_at,
             'updated_at' => (string)$this->updated_at,
-            'user' => $this->user->id,
             'department' => $this->department->id
         ];
     }

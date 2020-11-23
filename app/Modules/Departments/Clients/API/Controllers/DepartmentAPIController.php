@@ -6,7 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Modules\Departments\Clients\API\Requests\StoreDepartmentRequest;
 use App\Modules\Departments\Clients\API\Requests\UpdateDepartmentRequest;
 use App\Modules\Departments\Clients\API\Resources\DepartmentResource;
+use App\Modules\Documents\Documents;
 use App\Modules\Employees\Clients\API\Resources\EmployeeResource;
+use App\Modules\Employees\Employees;
 use App\Modules\Users\Users;
 use Illuminate\Support\Facades\App;
 
@@ -49,11 +51,11 @@ class DepartmentAPIController extends  Controller
 
     public function getEmployees(Department $department)
     {
-        return EmployeeResource::collection($department->employees);
+        return Employees::resourceCollection($department->employees);
     }
 
     public function getDocuments(Department $department)
     {
-        return EmployeeResource::collection($department->employees);
+        return Documents::resourceCollection($department->documents);
     }
 }

@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Modules\Roles\Clients\API\Requests;
+namespace App\Modules\Documents\Clients\API\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Facades\Auth;
 
-class ChangeRolePasswordRequest extends FormRequest
+class AttachDocumentDepartmentsRequest extends FormRequest
 {
     /**
      * Determine if the role is authorized to make this request.
@@ -14,7 +13,6 @@ class ChangeRolePasswordRequest extends FormRequest
      */
     public function authorize()
     {
-       // return $this->role()->rolename == Auth::role()->rolename? false:true;
         return true;
     }
 
@@ -25,9 +23,6 @@ class ChangeRolePasswordRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'old_password' => 'required|min:8',
-            'password' => 'required|min:8|confirmed'
-        ];
+        return config('documents.validation_rules.departments.attach');
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Modules\Documents\Processing\Actions;
 
 use App\Modules\Documents\Data\Repositories\DocumentRepository;
+use App\Modules\Employees\Data\Repositories\EmployeeRepository;
 use Illuminate\Support\Facades\App;
 
 /**
@@ -19,6 +20,14 @@ class CreateDocumentAction
 {
     public function run($data)
     {
-        return App::make(DocumentRepository::class)->create($data);
+        $employeeRepository = App::make(EmployeeRepository::class);
+        $employee = $employeeRepository->get($data['employee']);
+
+        $documentRepository = App::make(DocumentRepository::class);
+        $document = $documentRepository->create($data, $employee);
+
+        $documentRepository->attachDepartments($data, $document);
+
+        return $document;
     }
 }

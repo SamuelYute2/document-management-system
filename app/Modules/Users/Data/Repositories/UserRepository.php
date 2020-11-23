@@ -2,8 +2,8 @@
 
 namespace App\Modules\Users\Data\Repositories;
 
+use App\Modules\Employees\Data\Models\Employee;
 use App\Modules\Users\Data\Models\User;
-use App\Modules\Users\Processing\Tasks\AssignUserRandomPasswordTask;
 use Carbon\Carbon;
 
 class UserRepository {
@@ -23,18 +23,11 @@ class UserRepository {
         return User::where($field, $value)->first();
     }
 
-    public function getAllWith($relationships)
-    {
-        return User::with($relationships)->get();
-    }
-
     public function create($data, Employee $employee)
     {
         $user = new User;
         $user->fill($data);
-        $user->status = 0;
-
-        $this->assignPassword($user,$data['password']);
+        $user->password = $data['password'];
 
         $user->employee()->associate($employee);
         $user->save();
@@ -58,11 +51,5 @@ class UserRepository {
     {
         $user->last_login = Carbon::now();
         $user->save();
-    }
-
-    public function assignPassword(&$user, $password)
-    {
-        $user->old_password = $password;
-        $user->password = bcrypt($password);
     }
 }

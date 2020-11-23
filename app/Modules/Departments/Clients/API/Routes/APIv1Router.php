@@ -18,7 +18,7 @@ class APIv1Router
         $this->router->group([
             'prefix' => 'departments',
             'as' => 'departments.',
-            'middleware' => 'auth:api'
+            //'middleware' => 'auth:api'
             ],
             function($router)
             {
@@ -55,7 +55,7 @@ class APIv1Router
 
             $router->get('/{department}/documents', [
                 'as' => 'documents',
-                'uses' => 'DepartmentAPIController@getDepartments',
+                'uses' => 'DepartmentAPIController@getDocuments',
             ]);
         });
     }

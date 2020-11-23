@@ -42,14 +42,14 @@ class DocumentRepository {
         return $document->delete();
     }
 
-    public function attachDepartment(Document $document, Department $department)
+    public function attachDepartments($data, Document $document)
     {
-        return $document->departments()->syncWithoutDetaching([$department->id]);
+        return $document->departments()->syncWithoutDetaching($data['departments']);
     }
 
-    public function detachDepartment(Document $document, Department $department)
+    public function detachDepartments($data, Document $document)
     {
-        return $document->departments()->detach([$department->id]);
+        return $document->departments()->detach($data['departments']);
     }
 
     public function attachVersion(Document $document, Document $newDocument)

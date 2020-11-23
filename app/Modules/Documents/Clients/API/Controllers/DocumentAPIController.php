@@ -4,9 +4,13 @@ namespace App\Modules\Documents\Clients\API\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Modules\Departments\Departments;
+use App\Modules\Documents\Clients\API\Requests\AttachDocumentDepartmentsRequest;
+use App\Modules\Documents\Clients\API\Requests\DetachDocumentDepartmentsRequest;
 use App\Modules\Documents\Clients\API\Requests\StoreDocumentRequest;
 use App\Modules\Documents\Clients\API\Requests\UpdateDocumentRequest;
 use App\Modules\Documents\Clients\API\Resources\DocumentResource;
+use App\Modules\Documents\Processing\Actions\AttachDocumentDepartmentsAction;
+use App\Modules\Documents\Processing\Actions\DetachDocumentDepartmentsAction;
 use App\Modules\Employees\Employees;
 use Illuminate\Support\Facades\App;
 
@@ -55,6 +59,20 @@ class DocumentAPIController extends  Controller
     public function getDepartments(Document $document)
     {
         return Departments::resourceCollection($document->departments);
+    }
+
+    public function attachDepartments(AttachDocumentDepartmentsRequest $request, Document $document)
+    {
+        App::make(AttachDocumentDepartmentsAction::class)->run($request->all(), $document);
+
+        return response('Success',200);
+    }
+
+    public function detachDepartments(DetachDocumentDepartmentsRequest $request, Document $document)
+    {
+        App::make(DetachDocumentDepartmentsAction::class)->run($request->all(), $document);
+
+        return response('Success',200);
     }
 
     public function getVersions(Document $document)

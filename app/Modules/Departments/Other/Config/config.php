@@ -5,7 +5,7 @@ return [
     'validation_rules' => [
 
         'store' => [
-            'name' => 'required|string|exists:departments'
+            'name' => 'required|string|unique:departments'
         ],
 
         'update' => [

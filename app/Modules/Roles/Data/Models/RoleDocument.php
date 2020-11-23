@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Modules\Departments\Data\Models;
+namespace App\Modules\Roles\Data\Models;
 
 use App\Modules\Documents\Data\Models\Document;
 use App\Modules\Employees\Data\Models\Employee;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class Department extends Model
+class RoleDocument extends Pivot
 {
     /**
      * The attributes that are mass assignable.
@@ -19,7 +19,7 @@ class Department extends Model
 
     public function employees()
     {
-        return $this->hasMany(Employee::class);
+        return $this->belongsToMany(Employee::class);
     }
 
     public function documents()
