@@ -20,66 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9080d415-244a-43ec-93cf-585a60c96748" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Requests/DetachDocumentDepartmentsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Documents/Processing/Actions/AttachDocumentDepartmentsAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Documents/Processing/Actions/DetachDocumentDepartmentsAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/AttachRoleDocumentsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/AttachRoleEmployeesRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/ChangeRoleDocumentPermissionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/DetachRoleDocumentsRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/DetachRoleEmployeesRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Data/Models/RoleDocument.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/AttachRoleDocumentsAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/AttachRoleEmployeesAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/DetachRoleDocumentsAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/DetachRoleEmployeesAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Livewire.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Livewire.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Departments/Clients/API/Controllers/DepartmentAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Departments/Clients/API/Controllers/DepartmentAPIController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/Departments/Clients/API/Routes/APIv1Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Departments/Clients/API/Routes/APIv1Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Departments/Data/Models/Department.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Departments/Data/Models/Department.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Departments/Other/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Departments/Other/Config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Controllers/DocumentAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Controllers/DocumentAPIController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Routes/APIv1Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Routes/APIv1Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Data/Migrations/2020_01_03_100000_create_documents_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Data/Migrations/2020_01_03_100000_create_documents_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Data/Repositories/DocumentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Data/Repositories/DocumentRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Other/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Other/Config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Documents/Processing/Actions/CreateDocumentAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Processing/Actions/CreateDocumentAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Controllers/EmployeeAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Controllers/EmployeeAPIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Requests/UpdateEmployeeRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Requests/UpdateEmployeeRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Resources/EmployeeResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Resources/EmployeeResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Routes/APIv1Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Clients/API/Routes/APIv1Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Data/Models/Employee.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Data/Models/Employee.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Data/Repositories/EmployeeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Data/Repositories/EmployeeRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Other/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Other/Config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Employees/Processing/Actions/CreateEmployeeAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Employees/Processing/Actions/CreateEmployeeAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Controllers/RoleAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Controllers/RoleAPIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Requests/ChangeRoleRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Documents/Clients/API/Requests/AttachDocumentDepartmentsRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Routes/APIv1Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Clients/API/Routes/APIv1Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Data/Migrations/2020_01_03_100000_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Data/Migrations/2020_01_03_100000_create_roles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Data/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Data/Models/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Data/Repositories/RoleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Data/Repositories/RoleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Other/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Other/Config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/ChangeRoleAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/ChangeRoleDocumentPermissionAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/CreateRoleAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Roles/Processing/Actions/CreateRoleAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Controllers/UserAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Controllers/UserAPIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Resources/UserResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Resources/UserResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Routes/APIv1Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Clients/API/Routes/APIv1Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Data/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Data/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Data/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Data/Repositories/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Other/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Other/Config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Other/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Other/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Processing/Actions/CreateUserAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Processing/Actions/CreateUserAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Users/Processing/Tasks/GenerateRandomUserPasswordTask.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Users/Processing/Tasks/GenerateRandomUserPasswordTask.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/departments.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/departments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/documents.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/documents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/employees.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/employees.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/roles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +214,7 @@
       <workItem from="1605682141249" duration="10503000" />
       <workItem from="1605692798437" duration="2784000" />
       <workItem from="1605768298730" duration="15577000" />
-      <workItem from="1606143403108" duration="22520000" />
+      <workItem from="1606143403108" duration="22874000" />
     </task>
     <servers />
   </component>
